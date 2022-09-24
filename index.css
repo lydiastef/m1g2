@@ -1,0 +1,96 @@
+body {
+    margin: auto;
+    background-image: url("color pic med.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    /*tried to align the logo in the middle
+    compared to the text underneath. When I set margin left and right to auto, 
+    it went too far to the right so that's why I used % */
+    height: 20px;
+    width: 20px;
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+.headerContainer {
+    border-bottom: dotted;
+    border-color: #f8a5b9;
+}
+
+.info {
+    /*Info text in the upper right corner*/
+    text-align: right;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #f9d8e0;
+    margin-right: 15px;
+}
+
+.container {
+    /*The big festival text is aligned in the center to be 
+    visible and the highest text in the hierarchy*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f9d8e0;
+    text-align: center;
+    padding: 30px;
+}
+
+.h1 {
+    font-size: 50px;
+}
+
+.h2 {
+    font-size: 30px;
+}
+
+.container1 {
+    /*The three boxes. 
+    A bit more tricky to align those in a nice horizontal 
+    row in the center of the lower part of the poster*/
+    width: 500px;
+    height: 200px;
+    display: flex; /*lines boxes horizontally*/ 
+    flex-direction: row; /*boxes go from left to right*/
+    justify-content: space-around;
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+}
+
+.item1 {
+    /*First box has no border*/
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.item2 {
+    /*Second box has border for more visibility*/
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    border-right: #f9d8e0;
+    border-style: double;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    height: fit-content;
+    width: 150px;
+}
+
+.item3 {
+    /*Third box has no border*/
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    border-left: #f9d8e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
