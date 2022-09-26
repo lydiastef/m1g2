@@ -48,6 +48,21 @@ body {
 }
 
 .container1 {
+    /*The three DJ's*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+}
+
+.h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.container2 {
     /*The three boxes. 
     A bit more tricky to align those in a nice horizontal 
     row in the center of the lower part of the poster*/
@@ -56,9 +71,13 @@ body {
     display: flex; /*lines boxes horizontally*/ 
     flex-direction: row; /*boxes go from left to right*/
     justify-content: space-around;
-    margin: auto;
     color: aliceblue;
     text-align: center;
+    padding: 50px;
+    margin: auto;
+    margin-left: 27%; /*This container was further to the right compared 
+                      to the container above with h1 and h2 so I adjusted it with % */
+    margin-right: 73%;
 }
 
 .item1 {
